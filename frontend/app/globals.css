@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(34, 211, 238, 0.12), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.1), transparent 28%),
+    #020617;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.28);
+  color: #f8fafc;
+}
+
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+code,
+pre,
+.font-mono {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, monospace;
+}
